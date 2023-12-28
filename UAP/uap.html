@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UAP</title>
+    <style>
+      .container1 {
+        width: 150px;
+        
+      }
+      .kode h2 {
+        border: 5px solid gray;
+      }
+      .Barang {
+        background-color: aquamarine;
+        width: 100px;
+        height: 400px;
+        padding-left: 200px;
+      }
+      .Harga {
+        background-color: aquamarine;
+        width: 100px;
+        height: 400px;
+      }
+
+      
+      table{
+        border: 10px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container1">
+
+        <thead>
+            <tr>
+                <th>Kode</th>
+                <th>Barang</th>
+                <th>Harga</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>barang A</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>barang B</td>
+                <td>20000</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>barang C</td>
+                <td>30000</td>
+            </tr>
+        </tbody>
+      
+      
+    </div>
+
+    <div class="container2">
+      <div class="dalam">
+        <label id="kode">Masukkan Kode </label>
+        <input type="text" id="kodee" placeholder="masukkan kode:" />
+        <label id="jumlah" style="padding-top: 40px">Masukkan Jumlah</label>
+        <input type="text" id="jumlahh" placeholder="Banyaknya Barang" />
+      </div>
+      <button onclick="input()">submit</button>
+    </div>
+  </body>
+  <script>
+    function input() {
+      var kodebarang = parseFloat(document.getElementById("kodee").value);
+      var jumlah = parseFloat(document.getElementById("jumlahh").value);
+
+      if ((kodebarang = "001")) {
+        var hasil = jumlah * 10000;
+        alert("Total harga =" + hasil);
+        prompt("masukkan uang user: ");
+      } else if ((kodebarang = "002")) {
+        var hasil = jumlah * 20000;
+        alert("Total harga =" + hasil);
+      } else if ((kodebarang = "003")) {
+        var hasil = jumlah * 30000;
+        alert("Total harga =" + hasil);
+      }
+    }
+  </script>
+</html>
